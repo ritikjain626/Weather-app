@@ -32,17 +32,17 @@ const getWeather = async(city) => {
         climate.textContent = main;
         tempval.textContent = Math.round(feels_like - 273);
 
-        if (id < 300 && id > 200) tempicon.src = "/icons/scattered-thunderstorms.png";
+        if (id < 300 && id > 200) tempicon.src = "./icons/scattered-thunderstorms.png";
 
-        else if (id < 400 && id > 300) tempicon.src = "/icons/cloudy.png";
+        else if (id < 400 && id > 300) tempicon.src = "./icons/cloudy.png";
 
-        else if (id < 600 && id > 500) tempicon.src = "/icons/rain.png";
+        else if (id < 600 && id > 500) tempicon.src = "./icons/rain.png";
 
-        else if (id < 700 && id > 600) tempicon.src = "/icons/snow.png";
+        else if (id < 700 && id > 600) tempicon.src = "./icons/snow.png";
 
-        else if (id < 800 && id > 700) tempicon.src = "/icons/cloudy.png";
+        else if (id < 800 && id > 700) tempicon.src = "./icons/cloudy.png";
 
-        else if (id == 800) tempicon.src = "/icons/atmosphere.png";
+        else if (id == 800) tempicon.src = "./icons/atmosphere.png";
     } catch (error) {
         alert(`City not found`);
     }
@@ -77,17 +77,17 @@ window.addEventListener("load", () => {
                     climate.textContent = main;
                     tempval.textContent = Math.round(feels_like - 273);
 
-                    if (id < 300 && id > 200) tempicon.src = "/icons/scattered-thunderstorms.png";
+                    if (id < 300 && id > 200) tempicon.src = "./icons/scattered-thunderstorms.png";
 
-                    else if (id < 400 && id > 300) tempicon.src = "/icons/cloudy.png";
+                    else if (id < 400 && id > 300) tempicon.src = "./icons/cloudy.png";
 
-                    else if (id < 600 && id > 500) tempicon.src = "/icons/rain.png";
+                    else if (id < 600 && id > 500) tempicon.src = "./icons/rain.png";
 
-                    else if (id < 700 && id > 600) tempicon.src = "/icons/snow.png";
+                    else if (id < 700 && id > 600) tempicon.src = "./icons/snow.png";
 
-                    else if (id < 800 && id > 700) tempicon.src = "/icons/cloudy.png";
+                    else if (id < 800 && id > 700) tempicon.src = "./icons/cloudy.png";
 
-                    else if (id == 800) tempicon.src = "/icons/atmosphere.png";
+                    else if (id == 800) tempicon.src = "./icons/atmosphere.png";
 
                 });
         });
